@@ -14,7 +14,7 @@ fetch("https://jsonplaceholder.typicode.com/posts")
 
     function loadMore(index) {
       if (index < 100) {
-        for (let i = index; i < index + 20; i++) {
+        for (let i = index; i < index + 5; i++) {
           let li = document.createElement("li");
           ul.appendChild(li);
           let h2 = document.createElement("h2");
@@ -28,7 +28,7 @@ fetch("https://jsonplaceholder.typicode.com/posts")
       }
     }
     load_more.addEventListener("click", () => {
-      index = index + 20;
+      index = index + 5;
       loadMore(index);
     });
   })
