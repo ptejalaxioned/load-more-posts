@@ -99,7 +99,6 @@ li {
 
 /*for wrapper*/
 .wrapper {
-  max-width: 1360px;
   width: 86%; 
   margin: 0 auto;
 }
@@ -115,7 +114,77 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+h1{
+  font-size: 73px;
+  text-align: center;
+  color: #3bbec4;
+  padding: 55px 0px;
+  font-weight: 900;
+}
+h2{
+  font-size: 33px;
+  margin: 12px 0px;
+  color: #3bbec4;
+}
 
+.up .wrapper{
+  position: relative;
+z-index: 2;
+
+}
+
+.wrapper{ width: 100%;
+  margin: auto;
+  background-color:#e0e0e0;
+}
+.down .wrapper{
+  transform: translateY(-2000px);
+  transition: transform 0.5s;
+}
+
+.down-wrapper-onclick{
+  transform: translateY(-2000px);
+  transition: transform 0.5s;
+}
+
+
+.load-list {
+ width: 86%;
+ display: flex;
+ flex-direction: column;
+ margin: auto;
+ gap: 20px;
+}
+
+.load-list li{
+  width: 80%;
+  margin: auto;
+ }
+
+ p{
+  color: #6c6767;
+  font-size: 25px;
+ }
+
+ .button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+ }
+
+ button{
+  padding: 16px 22px;
+  background-color: #3bbec4;
+  color: aliceblue;
+  font-size: 25px;
+  border: none;
+  letter-spacing: 1px;
+  border-radius: 39px;
+  text-transform: capitalize;
+  margin: 39px;
+  font-weight: 900;
+ }
 /*=================================
   main styling ends here
 =================================*/
