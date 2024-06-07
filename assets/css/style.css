@@ -8,13 +8,87 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,22 +98,35 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll;
+}
 
 /* Align radios and text inputs with their label */
 
-input[type='radio'] { vertical-align: text-bottom; }
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
 
 /* Hand cursor on clickable input elements */
 label,
-input[type='button'],
-input[type='submit'],
+input[type="button"],
+input[type="submit"],
 button {
   cursor: pointer;
 }
@@ -50,7 +137,9 @@ strong {
   font-size: inherit;
 }
 
-em { font-style: italic; }
+em {
+  font-style: italic;
+}
 
 img {
   width: 100%;
@@ -66,8 +155,12 @@ sup {
   line-height: 0;
 }
 
-sup { top: -.7em; }
-sub { bottom: -.25em; }
+sup {
+  top: -0.7em;
+}
+sub {
+  bottom: -0.25em;
+}
 
 /* 1.2. Clear Fix
    ========================== */
@@ -78,8 +171,9 @@ sub { bottom: -.25em; }
   content: " ";
 }
 
-.cf:after { clear: both; }
-
+.cf:after {
+  clear: both;
+}
 
 /*for all*/
 body {
@@ -87,9 +181,9 @@ body {
   font-family: sans-serif;
 }
 
-a { 
+a {
   display: inline-block;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 li {
@@ -99,10 +193,9 @@ li {
 
 /*for wrapper*/
 .wrapper {
-  width: 86%; 
+  width: 86%;
   margin: 0 auto;
 }
-
 
 *,
 *::before,
@@ -114,77 +207,78 @@ li {
 /*=================================
   main styling starts here
 =================================*/
-h1{
-  font-size: 73px;
-  text-align: center;
-  color: #3bbec4;
+h1 {
   padding: 55px 0px;
+  color: #3bbec4;
+  font-size: 73px;
   font-weight: 900;
+  text-align: center;
 }
-h2{
-  font-size: 33px;
+
+h2 {
   margin: 12px 0px;
+  font-size: 33px;
   color: #3bbec4;
 }
 
-.up .wrapper{
+.up .wrapper {
   position: relative;
-z-index: 2;
-
+  z-index: 2;
 }
 
-.wrapper{ width: 100%;
+.wrapper {
+  width: 100%;
   margin: auto;
-  background-color:#e0e0e0;
+  background-color: #e0e0e0;
 }
-.down .wrapper{
-  transform: translateY(-2000px);
+
+.down-wrapper {
+  transform: translateY(-1000px);
   transition: transform 0.5s;
 }
 
-.down-wrapper-onclick{
-  transform: translateY(-2000px);
+.down-wrapper-onclick {
+  transform: translateY(0px);
   transition: transform 0.5s;
 }
-
 
 .load-list {
- width: 86%;
- display: flex;
- flex-direction: column;
- margin: auto;
- gap: 20px;
+  width: 86%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.load-list li{
+.load-list li {
   width: 80%;
   margin: auto;
- }
+}
 
- p{
+p {
   color: #6c6767;
   font-size: 25px;
- }
+}
 
- .button{
+.button {
   width: 100%;
+  padding-bottom: 40px;
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
- }
+}
 
- button{
+button {
   padding: 16px 22px;
+  margin: 39px;
   background-color: #3bbec4;
   color: aliceblue;
   font-size: 25px;
-  border: none;
-  letter-spacing: 1px;
-  border-radius: 39px;
-  text-transform: capitalize;
-  margin: 39px;
   font-weight: 900;
- }
+  border: none;
+  border-radius: 39px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
 /*=================================
   main styling ends here
 =================================*/
